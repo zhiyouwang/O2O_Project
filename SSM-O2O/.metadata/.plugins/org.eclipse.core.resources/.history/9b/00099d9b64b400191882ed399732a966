@@ -1,0 +1,21 @@
+package com.JunWang.o2o.interceptor.shopadmin;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+
+/**
+ * 店家管理西永登录验证拦截器
+ * 
+ * @author boyWang
+ *
+ */
+public class ShopLoginInterceptor extends HandlerInterceptorAdapter{
+
+	@Override
+	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+		throw Exception {
+		
+	}
+}

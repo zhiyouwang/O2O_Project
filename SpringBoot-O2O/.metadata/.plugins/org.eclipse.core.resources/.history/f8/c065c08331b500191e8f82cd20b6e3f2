@@ -1,0 +1,3 @@
+#server.port=8080
+#加入o2o前缀
+server.servlet.context-path=/o2o

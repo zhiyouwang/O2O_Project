@@ -1,0 +1,130 @@
+2019-07-25 23:04:50.583 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:04:50.604 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:04:50.624 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:04:50.689 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 3(Integer)
+2019-07-25 23:04:50.731 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 3
+2019-07-25 23:04:50.741 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:04:50.741 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:04:50.741 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:04:50.742 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:04:50.744 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:06:30.307 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:06:30.308 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:06:30.329 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:06:30.389 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 10(Integer)
+2019-07-25 23:06:30.418 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 4
+2019-07-25 23:06:30.432 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:06:30.432 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:06:30.433 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:06:30.433 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:06:30.435 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:08:47.246 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:08:47.248 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:08:47.265 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:08:47.329 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 10(Integer)
+2019-07-25 23:08:47.366 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 0
+2019-07-25 23:08:47.378 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:08:47.378 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:08:47.378 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:08:47.379 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:08:47.382 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:09:15.437 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:09:15.439 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:09:15.462 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:09:15.523 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 10(Integer)
+2019-07-25 23:09:15.555 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 4
+2019-07-25 23:09:15.562 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:09:15.562 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:09:15.562 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:09:15.563 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:09:15.564 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:09:39.228 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:09:39.229 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:09:39.252 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:09:39.319 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 3(Integer)
+2019-07-25 23:09:39.347 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 3
+2019-07-25 23:09:39.354 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:09:39.355 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:09:39.355 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:09:39.356 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:09:39.357 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:10:23.519 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:10:23.520 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:10:23.542 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:10:23.616 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 2(Integer)
+2019-07-25 23:10:23.647 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2019-07-25 23:10:23.654 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:10:23.654 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:10:23.654 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:10:23.654 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:10:23.656 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:13:39.692 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:13:39.694 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:13:39.712 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:13:39.772 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 3(Integer)
+2019-07-25 23:13:39.803 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 3
+2019-07-25 23:13:39.810 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:13:39.811 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:13:39.811 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:13:39.811 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:13:39.813 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:13:57.861 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:13:57.863 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:13:57.880 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:13:57.942 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 1(Integer), 3(Integer)
+2019-07-25 23:13:57.975 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 3
+2019-07-25 23:13:57.982 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:13:57.982 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:13:57.982 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:13:57.982 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:13:57.984 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:14:11.097 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:14:11.099 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:14:11.123 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:14:11.189 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 2(Integer), 3(Integer)
+2019-07-25 23:14:11.223 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2019-07-25 23:14:11.230 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:14:11.231 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:14:11.231 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:14:11.232 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:14:11.233 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:14:34.416 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:14:34.417 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:14:34.439 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:14:34.498 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 2(Integer), 4(Integer)
+2019-07-25 23:14:34.526 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2019-07-25 23:14:34.535 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:14:34.535 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:14:34.535 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:14:34.535 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:14:34.537 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:15:12.130 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:15:12.131 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:15:12.152 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:15:12.220 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 1(Integer), 2(Integer)
+2019-07-25 23:15:12.254 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2019-07-25 23:15:12.264 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:15:12.264 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:15:12.264 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:15:12.265 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:15:12.267 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:17:00.266 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:17:00.267 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:17:00.286 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:17:00.355 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 1(Integer), 4(Integer)
+2019-07-25 23:17:00.386 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 3
+2019-07-25 23:17:00.396 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:17:00.396 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:17:00.396 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:17:00.397 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:17:00.398 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-07-25 23:19:11.198 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:19:11.200 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:19:11.216 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id = a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2019-07-25 23:19:11.279 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 8(Integer)
+2019-07-25 23:19:11.314 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopList - <==      Total: 4
+2019-07-25 23:19:11.321 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ShopDao.queryShopCount] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-25 23:19:11.321 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-25 23:19:11.322 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.shop_category_id in (select shop_category_id from tb_shop_category WHERE parent_id = ?) AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2019-07-25 23:19:11.322 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-07-25 23:19:11.323 [main] DEBUG com.JunWang.o2o.dao.ShopDao.queryShopCount - <==      Total: 1

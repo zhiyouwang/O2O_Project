@@ -1,0 +1,5 @@
+package com.JunWang.o2o.web.local;
+
+public class LocalController {
+
+}

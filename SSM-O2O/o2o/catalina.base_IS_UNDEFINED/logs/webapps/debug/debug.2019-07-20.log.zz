@@ -1,0 +1,17 @@
+2019-07-20 17:45:00.985 [main] DEBUG com.JunWang.o2o.util.ImageUtil - current relativeAddr is:upload\item\shop\1\2019072017450055460.jpg
+2019-07-20 17:45:00.987 [main] DEBUG com.JunWang.o2o.util.ImageUtil - current complete addr is:G:\image\upload\item\shop\1\2019072017450055460.jpg
+2019-07-20 17:45:00.987 [main] DEBUG com.JunWang.o2o.util.ImageUtil - basePath is:/G:/O2Oproject/o2o/target/test-classes/
+2019-07-20 17:45:01.493 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductDao.insertProduct] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-20 17:45:01.494 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-20 17:45:01.504 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product ( product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-20 17:45:01.535 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试商品1(String), 测试商品1(String), upload\item\shop\1\2019072017450055460.jpg(String), null, null, 20(Integer), 2019-07-20 17:45:00.983(Timestamp), 2019-07-20 17:45:00.983(Timestamp), 1(Integer), 1(Long), 1(Long)
+2019-07-20 17:45:01.603 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2019-07-20 17:45:01.628 [main] DEBUG com.JunWang.o2o.util.ImageUtil - current relativeAddr is :upload\item\shop\1\2019072017450179001.jpg
+2019-07-20 17:45:01.628 [main] DEBUG com.JunWang.o2o.util.ImageUtil - current complete addr is:G:\image\upload\item\shop\1\2019072017450179001.jpg
+2019-07-20 17:45:01.661 [main] DEBUG com.JunWang.o2o.util.ImageUtil - current relativeAddr is :upload\item\shop\1\2019072017450166213.jpg
+2019-07-20 17:45:01.661 [main] DEBUG com.JunWang.o2o.util.ImageUtil - current complete addr is:G:\image\upload\item\shop\1\2019072017450166213.jpg
+2019-07-20 17:45:01.704 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductImgDao.batchInsertProductImg] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-20 17:45:01.704 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-20 17:45:01.720 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img ( img_addr, img_desc, priority, create_time, product_id ) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2019-07-20 17:45:01.721 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: upload\item\shop\1\2019072017450179001.jpg(String), null, null, 2019-07-20 17:45:01.66(Timestamp), 4(Long), upload\item\shop\1\2019072017450166213.jpg(String), null, null, 2019-07-20 17:45:01.703(Timestamp), 4(Long)
+2019-07-20 17:45:01.723 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2

@@ -1,0 +1,17 @@
+2019-07-11 10:05:36.828 [main] DEBUG com.JunWang.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time, last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?, ?,?,?,?,?,?) 
+2019-07-11 10:05:36.873 [main] DEBUG com.JunWang.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 1(Integer), 1(Long), 测试的店铺(String), test(String), test(String), test(String), test(String), null, 2019-07-11 10:05:36.365(Timestamp), null, 1(Integer), 审核中(String)
+2019-07-11 10:05:36.918 [main] DEBUG com.JunWang.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2019-07-11 10:26:14.634 [main] DEBUG com.JunWang.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time, last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?, ?,?,?,?,?,?) 
+2019-07-11 10:26:14.683 [main] DEBUG com.JunWang.o2o.dao.ShopDao.insertShop - ==> Parameters: null, null, null, null, 测试描述(String), 测试描述(String), null, null, null, null, 2019-07-11 10:26:14.18(Timestamp), null, null
+2019-07-11 10:34:09.669 [main] DEBUG com.JunWang.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_desc=?, shop_addr=?, last_edit_time=? where shop_id=? 
+2019-07-11 10:34:09.720 [main] DEBUG com.JunWang.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试描述(String), 测试描述(String), 2019-07-11 10:34:09.173(Timestamp), 1(Long)
+2019-07-11 10:34:09.792 [main] DEBUG com.JunWang.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2019-07-11 20:28:32.507 [main] DEBUG com.JunWang.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id,shop_name,shop_desc,shop_addr,phone,shop_img,priority,create_time, last_edit_time,enable_status,advice) VALUES (?,?,?,?,?,?,?, ?,?,?,?,?,?) 
+2019-07-11 20:28:32.578 [main] DEBUG com.JunWang.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 1(Integer), 1(Long), 测试的店铺1(String), test1(String), test1(String), test1(String), null, null, 2019-07-11 20:28:32.466(Timestamp), 2019-07-11 20:28:32.466(Timestamp), 0(Integer), 审核中(String)
+2019-07-11 20:28:32.581 [main] DEBUG com.JunWang.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2019-07-11 20:28:32.668 [main] DEBUG com.JunWang.o2o.util.ImageUtil - current relativeAddr is:upload\item\shop\2\2019071120283220889.jpg
+2019-07-11 20:28:32.668 [main] DEBUG com.JunWang.o2o.util.ImageUtil - current complete addr is:G:\image\upload\item\shop\2\2019071120283220889.jpg
+2019-07-11 20:28:32.668 [main] DEBUG com.JunWang.o2o.util.ImageUtil - basePath is:/G:/O2Oproject/o2o/target/test-classes/
+2019-07-11 20:28:33.052 [main] DEBUG com.JunWang.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, advice=?, area_id=?, shop_category_id=? where shop_id=? 
+2019-07-11 20:28:33.053 [main] DEBUG com.JunWang.o2o.dao.ShopDao.updateShop - ==> Parameters: 测试的店铺1(String), test1(String), test1(String), test1(String), upload\item\shop\2\2019071120283220889.jpg(String), 2019-07-11 20:28:32.466(Timestamp), 0(Integer), 审核中(String), 1(Integer), 1(Long), 2(Long)
+2019-07-11 20:28:33.054 [main] DEBUG com.JunWang.o2o.dao.ShopDao.updateShop - <==    Updates: 1

@@ -1,0 +1,5 @@
+2019-07-15 19:41:36.528 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-15 19:41:36.532 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-15 19:41:36.547 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? 
+2019-07-15 19:41:36.611 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-15 19:41:36.646 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 1

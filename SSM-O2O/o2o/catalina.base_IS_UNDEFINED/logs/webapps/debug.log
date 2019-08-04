@@ -1,0 +1,50 @@
+2019-08-01 16:32:29.114 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.insertLocalAuth] use [master] Strategy, SqlCommanType [INSERT]..
+2019-08-01 16:32:29.119 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-08-01 16:32:29.144 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: INSERT INTO tb_local_auth(username,password,user_id,create_time,last_edit_time) VALUES (?,?,?,?,?) 
+2019-08-01 16:32:29.180 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: testusername(String), testpassword(String), 1(Long), 2019-08-01 16:32:29.094(Timestamp), null
+2019-08-01 16:32:30.509 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.insertLocalAuth - <==    Updates: 1
+2019-08-01 16:32:30.527 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserNameAndPwd] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-08-01 16:32:30.528 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-08-01 16:32:30.529 [main] DEBUG c.J.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-08-01 16:32:30.553 [main] DEBUG c.J.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), testpassword(String)
+2019-08-01 16:32:30.581 [main] DEBUG c.J.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2019-08-01 16:32:30.594 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-08-01 16:32:30.594 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-08-01 16:32:30.595 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-08-01 16:32:30.595 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-08-01 16:32:30.612 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-08-01 16:32:30.614 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.updateLocalAuth] use [master] Strategy, SqlCommanType [UPDATE]..
+2019-08-01 16:32:30.614 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-08-01 16:32:30.634 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-08-01 16:32:30.635 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: testpasswordnew(String), 2019-08-01 16:32:30.613(Timestamp), 1(Long), testusername(String), testpassword(String)
+2019-08-01 16:32:30.790 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
+2019-08-01 16:32:30.791 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-08-01 16:32:30.792 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-08-01 16:32:30.792 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-08-01 16:32:30.792 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-08-01 16:32:30.795 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-08-01 16:50:27.381 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId] use [master] Strategy, SqlCommanType [SELECT]..
+2019-08-01 16:50:27.383 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-08-01 16:50:27.394 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-08-01 16:50:27.432 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-08-01 16:50:27.458 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 0
+2019-08-01 16:50:27.468 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.insertLocalAuth] use [master] Strategy, SqlCommanType [INSERT]..
+2019-08-01 16:50:27.468 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-08-01 16:50:27.468 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: INSERT INTO tb_local_auth(username,password,user_id,create_time,last_edit_time) VALUES (?,?,?,?,?) 
+2019-08-01 16:50:27.476 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String), 1(Long), 2019-08-01 16:50:27.466(Timestamp), 2019-08-01 16:50:27.466(Timestamp)
+2019-08-01 16:50:27.477 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.insertLocalAuth - <==    Updates: 1
+2019-08-01 16:50:27.655 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-08-01 16:50:27.655 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-08-01 16:50:27.655 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_id = ? 
+2019-08-01 16:50:27.676 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2019-08-01 16:50:27.686 [main] DEBUG c.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2019-08-01 16:51:03.199 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.updateLocalAuth] use [master] Strategy, SqlCommanType [UPDATE]..
+2019-08-01 16:51:03.201 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-08-01 16:51:03.231 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: update tb_local_auth SET password=?, last_edit_time=? where user_id=? AND username=? AND password=? 
+2019-08-01 16:51:03.259 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2019-08-01 16:51:03.184(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2019-08-01 16:51:03.261 [main] DEBUG com.JunWang.o2o.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
+2019-08-01 16:51:03.365 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.LocalAuthDao.queryLocalByUserNameAndPwd] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-08-01 16:51:03.366 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-08-01 16:51:03.367 [main] DEBUG c.J.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-08-01 16:51:03.442 [main] DEBUG c.J.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), 6559sq606y6l92e9ss5qsqb5q92e566b(String)
+2019-08-01 16:51:03.490 [main] DEBUG c.J.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1

@@ -1,0 +1,25 @@
+package com.JunWang.o2o.service.Impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.JunWang.o2o.cache.JedisUtil;
+import com.JunWang.o2o.dao.ShopCategoryDao;
+import com.JunWang.o2o.entity.ShopCategory;
+import com.JunWang.o2o.service.ShopCategoryService;
+
+@Service
+public class ShopCategoryServiceImpl implements ShopCategoryService {
+	@Autowired
+	private ShopCategoryDao shopCategoryDao;
+	@Autowired
+	private JedisUtil.Keys jedisKeys;
+
+	@Override
+	public List<ShopCategory> getShopCategoryList(ShopCategory shopCategoryCondition) {
+
+		return shopCategoryDao.queryShopCategory(shopCategoryCondition);
+	}
+}

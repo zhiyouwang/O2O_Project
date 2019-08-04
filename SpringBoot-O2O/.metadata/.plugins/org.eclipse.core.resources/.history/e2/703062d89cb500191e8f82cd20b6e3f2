@@ -1,0 +1,14 @@
+package com.JunWang.o2o.config.redis;
+
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * spring-redis.xml里的配置
+ * 
+ * @author boyWang
+ *
+ */
+@Configuration
+public class RedisConfiguration {
+
+}

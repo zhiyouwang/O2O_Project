@@ -1,0 +1,43 @@
+2019-07-28 22:11:58.712 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-28 22:11:58.795 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-28 22:11:58.839 [main] DEBUG com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(name,gender,email,profile_img,user_type, create_time,last_edit_time,enable_status) VALUES (?,?,?,?, ?,?,?,?) 
+2019-07-28 22:11:58.876 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.PersonInfoDao.queryPersonInfoById] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-28 22:11:58.876 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-28 22:11:58.877 [main] DEBUG c.J.o2o.dao.PersonInfoDao.queryPersonInfoById - ==>  Preparing: SELECT user_id, name, gender, email, profile_img, user_type, create_time, last_edit_time, enable_status FROM tb_person_info WHERE user_id = ? 
+2019-07-28 22:11:58.900 [main] DEBUG c.J.o2o.dao.PersonInfoDao.queryPersonInfoById - ==> Parameters: 1(Long)
+2019-07-28 22:11:58.963 [main] DEBUG c.J.o2o.dao.PersonInfoDao.queryPersonInfoById - <==      Total: 1
+2019-07-28 22:13:41.801 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-28 22:13:41.802 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-28 22:13:41.816 [main] DEBUG com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(name,gender,email,profile_img,user_type, create_time,last_edit_time,enable_status) VALUES (?,?,?,?, ?,?,?,?) 
+2019-07-28 22:13:41.849 [main] DEBUG com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo - ==> Parameters: 我爱你(String), 女(String), null, null, 1(Integer), 2019-07-28 22:13:41.786(Timestamp), 2019-07-28 22:13:41.786(Timestamp), 1(Integer)
+2019-07-28 22:13:41.909 [main] DEBUG com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo - <==    Updates: 1
+2019-07-28 22:13:41.927 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.PersonInfoDao.queryPersonInfoById] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-28 22:13:41.927 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-28 22:13:41.928 [main] DEBUG c.J.o2o.dao.PersonInfoDao.queryPersonInfoById - ==>  Preparing: SELECT user_id, name, gender, email, profile_img, user_type, create_time, last_edit_time, enable_status FROM tb_person_info WHERE user_id = ? 
+2019-07-28 22:13:41.949 [main] DEBUG c.J.o2o.dao.PersonInfoDao.queryPersonInfoById - ==> Parameters: 1(Long)
+2019-07-28 22:13:41.975 [main] DEBUG c.J.o2o.dao.PersonInfoDao.queryPersonInfoById - <==      Total: 1
+2019-07-28 22:16:04.234 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.WechatAuthDao.insertWechatAuth] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-28 22:16:04.235 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-28 22:16:04.253 [main] DEBUG com.JunWang.o2o.dao.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id,open_id,create_time) VALUES (?,?,?) 
+2019-07-28 22:16:04.288 [main] DEBUG com.JunWang.o2o.dao.WechatAuthDao.insertWechatAuth - ==> Parameters: 1(Long), dafahizhfdhaih(String), 2019-07-28 22:16:04.217(Timestamp)
+2019-07-28 22:16:04.391 [main] DEBUG com.JunWang.o2o.dao.WechatAuthDao.insertWechatAuth - <==    Updates: 1
+2019-07-28 22:16:04.408 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-28 22:16:04.408 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-28 22:16:04.409 [main] DEBUG c.J.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==>  Preparing: SELECT w.wechat_auth_id, w.open_id, w.create_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_wechat_auth w LEFT JOIN tb_person_info p ON w.user_id = p.user_id WHERE w.open_id = ? 
+2019-07-28 22:16:04.431 [main] DEBUG c.J.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==> Parameters: dafahizhfdhaih(String)
+2019-07-28 22:16:04.455 [main] DEBUG c.J.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - <==      Total: 1
+2019-07-28 22:23:37.154 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-28 22:23:37.157 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-28 22:23:37.165 [main] DEBUG com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(name,gender,email,profile_img,user_type, create_time,last_edit_time,enable_status) VALUES (?,?,?,?, ?,?,?,?) 
+2019-07-28 22:23:37.190 [main] DEBUG com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo - ==> Parameters: 测试一下(String), null, null, null, 1(Integer), 2019-07-28 22:23:37.139(Timestamp), null, 1(Integer)
+2019-07-28 22:23:37.192 [main] DEBUG com.JunWang.o2o.dao.PersonInfoDao.insertPersonInfo - <==    Updates: 1
+2019-07-28 22:23:37.205 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.WechatAuthDao.insertWechatAuth] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-28 22:23:37.205 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-28 22:23:37.205 [main] DEBUG com.JunWang.o2o.dao.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id,open_id,create_time) VALUES (?,?,?) 
+2019-07-28 22:23:37.208 [main] DEBUG com.JunWang.o2o.dao.WechatAuthDao.insertWechatAuth - ==> Parameters: 3(Long), dafahizhfdhaih(String), 2019-07-28 22:23:37.139(Timestamp)
+2019-07-28 22:23:37.209 [main] DEBUG com.JunWang.o2o.dao.WechatAuthDao.insertWechatAuth - <==    Updates: 1
+2019-07-28 22:23:37.344 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-28 22:23:37.345 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-28 22:23:37.346 [main] DEBUG c.J.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==>  Preparing: SELECT w.wechat_auth_id, w.open_id, w.create_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_wechat_auth w LEFT JOIN tb_person_info p ON w.user_id = p.user_id WHERE w.open_id = ? 
+2019-07-28 22:23:37.368 [main] DEBUG c.J.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==> Parameters: dafahizhfdhaih(String)
+2019-07-28 22:23:37.388 [main] DEBUG c.J.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - <==      Total: 1

@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+G:\O2Oproject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2412762766.index
+\o2o\src\main\resources
+G:\O2Oproject\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1609764795.index
+\o2o\src\main\java

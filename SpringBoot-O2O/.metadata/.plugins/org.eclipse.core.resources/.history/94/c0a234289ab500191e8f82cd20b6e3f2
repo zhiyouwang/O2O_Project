@@ -1,0 +1,5 @@
+package com.JunWang.o2o.config.service;
+
+public class TransactionManagementConfiguration {
+
+}

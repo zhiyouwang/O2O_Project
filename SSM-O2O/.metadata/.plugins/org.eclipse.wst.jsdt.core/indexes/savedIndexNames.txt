@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+G:\O2Oproject\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+981090289.index
+3907746891.index
+479421921.index
+3546925987.index
+3727541357.index
+1358788416.index

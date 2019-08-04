@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sat Aug 03 17:31:54 CST 2019
+org.eclipse.jst.jee.server\:o2o=G\:\\tomcat8.5\\apache-tomcat-8.5.42\\webapps\\o2o
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\boyWang\\.m2\\repository\\org\\springframework\\spring-web\\5.1.8.RELEASE\\spring-web-5.1.8.RELEASE.jar=G\:\\tomcat8.5\\apache-tomcat-8.5.42\\webapps\\o2o\\WEB-INF\\lib\\spring-web-5.1.8.RELEASE.jar

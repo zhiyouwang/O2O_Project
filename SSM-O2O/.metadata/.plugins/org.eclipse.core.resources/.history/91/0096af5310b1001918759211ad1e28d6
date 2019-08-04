@@ -1,0 +1,5 @@
+package com.JunWang.o2o.dto;
+
+public class UserAccessToken {
+
+}

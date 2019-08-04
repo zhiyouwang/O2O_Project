@@ -1,0 +1,11 @@
+package com.JunWang.o2o.interceptor.shopadmin;
+
+/**
+ * 店家管理西永登录验证拦截器
+ * 
+ * @author boyWang
+ *
+ */
+public class ShopLoginInterceptor {
+
+}

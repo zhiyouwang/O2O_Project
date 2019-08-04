@@ -1,0 +1,5 @@
+package com.JunWang.o2o.config.dao;
+
+public class DataSourceConfiguration {
+
+}

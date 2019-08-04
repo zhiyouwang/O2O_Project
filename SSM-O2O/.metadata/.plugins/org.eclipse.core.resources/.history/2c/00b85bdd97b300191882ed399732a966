@@ -1,0 +1,7 @@
+package com.JunWang.o2o.util;
+
+import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
+
+public class EncryptPropertyPlaceholderConfigurer extends PropertyPlaceholderConfigurer {
+
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AwardDaoTest" project="o2o" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="com.JunWang.o2o.dao.AwardDaoTest" time="0.544">
+    <testcase name="testAInsertAward" classname="com.JunWang.o2o.dao.AwardDaoTest" time="0.33"/>
+    <testcase name="testBQueryAwardList" classname="com.JunWang.o2o.dao.AwardDaoTest" time="0.04"/>
+    <testcase name="testCQueryAwardByAwardId" classname="com.JunWang.o2o.dao.AwardDaoTest" time="0.006"/>
+    <testcase name="testDUpdateAward" classname="com.JunWang.o2o.dao.AwardDaoTest" time="0.077"/>
+    <testcase name="testEDeleteAward" classname="com.JunWang.o2o.dao.AwardDaoTest" time="0.091"/>
+  </testsuite>
+</testrun>

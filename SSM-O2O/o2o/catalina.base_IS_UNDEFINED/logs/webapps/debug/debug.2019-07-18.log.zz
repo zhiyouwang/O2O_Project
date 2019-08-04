@@ -1,0 +1,43 @@
+2019-07-18 21:19:43.612 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductImgDao.batchInsertProductImg] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-18 21:19:43.615 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-18 21:19:43.648 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img ( img_addr, img_desc, priority, create_time, product_id ) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2019-07-18 21:19:43.673 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: 图片1(String), 测试图片1(String), 1(Integer), 2019-07-18 21:19:43.597(Timestamp), 1(Long), 图片2(String), null, 1(Integer), 2019-07-18 21:19:43.597(Timestamp), 1(Long)
+2019-07-18 21:22:30.021 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductImgDao.batchInsertProductImg] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-18 21:22:30.022 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-18 21:22:30.054 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img ( img_addr, img_desc, priority, create_time, product_id ) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2019-07-18 21:22:30.079 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: 图片1(String), 测试图片1(String), 1(Integer), 2019-07-18 21:22:30.007(Timestamp), 1(Long), 图片2(String), null, 1(Integer), 2019-07-18 21:22:30.007(Timestamp), 1(Long)
+2019-07-18 21:32:21.487 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductDao.insertProduct] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-18 21:32:21.488 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-18 21:32:21.502 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product ( product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-18 21:32:21.531 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试1(String), 测试Desc1(String), test1(String), null, null, 1(Integer), 2019-07-18 21:32:21.473(Timestamp), 2019-07-18 21:32:21.473(Timestamp), 1(Integer), 1(Long), 1(Long)
+2019-07-18 21:32:21.616 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2019-07-18 21:32:21.631 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductDao.insertProduct] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-18 21:32:21.631 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-18 21:32:21.631 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product ( product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-18 21:32:21.633 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试2(String), 测试Desc2(String), test2(String), null, null, 2(Integer), 2019-07-18 21:32:21.473(Timestamp), 2019-07-18 21:32:21.473(Timestamp), 0(Integer), 1(Long), 1(Long)
+2019-07-18 21:32:21.716 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2019-07-18 21:32:21.717 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductDao.insertProduct] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-18 21:32:21.717 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-18 21:32:21.717 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product ( product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id ) VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ) 
+2019-07-18 21:32:21.718 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - ==> Parameters: test3(String), 测试Desc3(String), test3(String), null, null, 3(Integer), 2019-07-18 21:32:21.473(Timestamp), 2019-07-18 21:32:21.473(Timestamp), 1(Integer), 1(Long), 1(Long)
+2019-07-18 21:32:21.783 [main] DEBUG com.JunWang.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2019-07-18 21:32:36.156 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductImgDao.batchInsertProductImg] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-18 21:32:36.158 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-18 21:32:36.195 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img ( img_addr, img_desc, priority, create_time, product_id ) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2019-07-18 21:32:36.219 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: 图片1(String), 测试图片1(String), 1(Integer), 2019-07-18 21:32:36.141(Timestamp), 1(Long), 图片2(String), null, 1(Integer), 2019-07-18 21:32:36.141(Timestamp), 1(Long)
+2019-07-18 21:32:36.324 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2019-07-18 21:32:58.682 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductImgDao.queryProductImgList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-18 21:32:58.683 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-18 21:32:58.700 [main] DEBUG c.J.o2o.dao.ProductImgDao.queryProductImgList - ==>  Preparing: SELECT product_img_id, img_addr, img_desc, priority, create_time, product_id FROM tb_product_img WHERE product_id=? ORDER BY product_img_id ASC 
+2019-07-18 21:32:58.757 [main] DEBUG c.J.o2o.dao.ProductImgDao.queryProductImgList - ==> Parameters: 1(Long)
+2019-07-18 21:32:58.784 [main] DEBUG c.J.o2o.dao.ProductImgDao.queryProductImgList - <==      Total: 2
+2019-07-18 21:33:22.280 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductImgDao.deleteProductImgByProductId] use [master] Strategy, SqlCommanType [DELETE]..
+2019-07-18 21:33:22.282 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-18 21:33:22.297 [main] DEBUG c.J.o.d.ProductImgDao.deleteProductImgByProductId - ==>  Preparing: DELETE FROM tb_product_img WHERE product_id = ? 
+2019-07-18 21:33:22.319 [main] DEBUG c.J.o.d.ProductImgDao.deleteProductImgByProductId - ==> Parameters: 1(Long)
+2019-07-18 21:33:22.382 [main] DEBUG c.J.o.d.ProductImgDao.deleteProductImgByProductId - <==    Updates: 2
+2019-07-18 21:34:02.660 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductImgDao.batchInsertProductImg] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-18 21:34:02.661 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-18 21:34:02.693 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img ( img_addr, img_desc, priority, create_time, product_id ) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
+2019-07-18 21:34:02.719 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: 图片1(String), 测试图片1(String), 1(Integer), 2019-07-18 21:34:02.645(Timestamp), 1(Long), 图片2(String), null, 1(Integer), 2019-07-18 21:34:02.645(Timestamp), 1(Long)
+2019-07-18 21:34:02.807 [main] DEBUG c.J.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2

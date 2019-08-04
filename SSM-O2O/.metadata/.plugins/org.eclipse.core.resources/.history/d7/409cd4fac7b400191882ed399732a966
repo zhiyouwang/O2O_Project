@@ -1,0 +1,5 @@
+package com.JunWang.o2o.entity;
+
+public class UserProductMap {
+
+}

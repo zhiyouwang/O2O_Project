@@ -1,0 +1,14 @@
+server.port=8080
+#加入o2o前缀
+server.servlet.context-path=/o2o
+
+#DataSource
+jdbc.driver=com.mysql.jdbc.Driver
+jdbc.master.url=jdbc:mysql://localhost:3306/o2oproject?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+jdbc.username=7A7HgLdhtT0=
+jdbc.password=YHdxW1ue4aQ=
+
+#Mybatis
+mybatis_config_file=mybatis-config.xml
+mapper_path=/mapper/**.xml
+type_alias_package=con.JunWang.entity

@@ -1,0 +1,12 @@
+package com.JunWang.o2o.config.service;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@Configuration
+// 首先使用注解@EnableTransactionManagement开始事务支持后
+// 在service方法上添加注解@Transactional即可
+@EnableTransactionManagement
+public class TransactionManagementConfiguration {
+
+}

@@ -1,0 +1,75 @@
+2019-07-17 19:49:05.705 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-17 19:49:05.709 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-17 19:49:05.726 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? 
+2019-07-17 19:49:05.812 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-17 19:49:05.952 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 1
+2019-07-17 20:25:39.183 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.batchInsertProductCategory] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-17 20:25:39.185 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-17 20:25:39.219 [main] DEBUG c.J.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT INTO tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2019-07-17 20:25:39.246 [main] DEBUG c.J.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别1(String), 1(Integer), 2019-07-17 20:25:39.163(Timestamp), 1(Long), 商品类别2(String), 2(Integer), 2019-07-17 20:25:39.163(Timestamp), 1(Long)
+2019-07-17 20:25:39.344 [main] DEBUG c.J.o.d.P.batchInsertProductCategory - <==    Updates: 2
+2019-07-17 21:41:50.078 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-17 21:41:50.079 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-17 21:41:50.093 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2019-07-17 21:41:50.153 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-17 21:41:50.177 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 6
+2019-07-17 21:42:32.536 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-17 21:42:32.537 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-17 21:42:32.552 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2019-07-17 21:42:32.606 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-17 21:42:32.630 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 6
+2019-07-17 21:46:23.485 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-17 21:46:23.487 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-17 21:46:23.501 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2019-07-17 21:46:23.566 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-17 21:46:23.590 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 6
+2019-07-17 21:47:17.106 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-17 21:47:17.108 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-17 21:47:17.122 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2019-07-17 21:47:17.181 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-17 21:47:17.205 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 6
+2019-07-17 21:47:39.096 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-17 21:47:39.158 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-17 21:47:40.431 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2019-07-17 21:47:43.793 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-17 21:47:45.221 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 6
+2019-07-17 21:57:10.464 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-17 21:57:10.465 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-17 21:57:10.480 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2019-07-17 21:57:10.537 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-17 21:57:10.561 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 6
+2019-07-17 21:57:10.568 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.deleteProductCategory] use [master] Strategy, SqlCommanType [DELETE]..
+2019-07-17 21:57:10.569 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-17 21:57:10.569 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2019-07-17 21:57:10.569 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 6(Long), 1(Long)
+2019-07-17 21:57:10.648 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - <==    Updates: 1
+2019-07-17 21:57:10.649 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.deleteProductCategory] use [master] Strategy, SqlCommanType [DELETE]..
+2019-07-17 21:57:10.649 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-17 21:57:10.649 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2019-07-17 21:57:10.650 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 5(Long), 1(Long)
+2019-07-17 21:57:10.709 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - <==    Updates: 1
+2019-07-17 21:58:57.799 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.batchInsertProductCategory] use [master] Strategy, SqlCommanType [INSERT]..
+2019-07-17 21:58:57.800 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-17 21:58:57.830 [main] DEBUG c.J.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT INTO tb_product_category(product_category_name, priority, create_time, shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2019-07-17 21:58:57.857 [main] DEBUG c.J.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别1(String), 1(Integer), 2019-07-17 21:58:57.784(Timestamp), 1(Long), 商品类别2(String), 2(Integer), 2019-07-17 21:58:57.784(Timestamp), 1(Long)
+2019-07-17 21:58:57.990 [main] DEBUG c.J.o.d.P.batchInsertProductCategory - <==    Updates: 2
+2019-07-17 21:58:57.994 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-17 21:58:57.994 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-17 21:58:57.995 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2019-07-17 21:58:58.014 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-17 21:58:58.055 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 6
+2019-07-17 21:58:58.062 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.queryProductCategoryList] use [slave] Strategy, SqlCommanType [SELECT]..
+2019-07-17 21:58:58.062 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：slave
+2019-07-17 21:58:58.063 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2019-07-17 21:58:58.063 [main] DEBUG c.J.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
+2019-07-17 21:58:58.065 [main] DEBUG c.J.o.d.P.queryProductCategoryList - <==      Total: 6
+2019-07-17 21:58:58.067 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.deleteProductCategory] use [master] Strategy, SqlCommanType [DELETE]..
+2019-07-17 21:58:58.067 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-17 21:58:58.067 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2019-07-17 21:58:58.068 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 10(Long), 1(Long)
+2019-07-17 21:58:58.123 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - <==    Updates: 1
+2019-07-17 21:58:58.123 [main] DEBUG c.J.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.JunWang.o2o.dao.ProductCategoryDao.deleteProductCategory] use [master] Strategy, SqlCommanType [DELETE]..
+2019-07-17 21:58:58.123 [main] DEBUG com.JunWang.o2o.dao.split.DynamicDataSourceHolder - 所使用的的数据源是：master
+2019-07-17 21:58:58.123 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - ==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id = ? AND shop_id = ? 
+2019-07-17 21:58:58.124 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - ==> Parameters: 9(Long), 1(Long)
+2019-07-17 21:58:58.188 [main] DEBUG c.J.o.dao.ProductCategoryDao.deleteProductCategory - <==    Updates: 1
